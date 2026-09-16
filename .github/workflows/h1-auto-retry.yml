@@ -1,0 +1,12 @@
+name: H1 Auto Retry Collision
+on:
+  workflow_dispatch:
+jobs:
+  h1-collision:
+    name: H1 Collision Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit inert canary and fail
+        run: |
+          echo H1-AUTO-RETRY-COLLISION-20260916
+          exit 1
