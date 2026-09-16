@@ -1,7 +1,7 @@
 pull_request_rules:
-  - name: h1 lifecycle inert marker
+  - name: H1 extends source A
     conditions:
-      - -draft
+      - label = h1-extends-a-never
     actions:
       comment:
-        message: H1 lifecycle inert
+        message: H1-EXTENDS-A
