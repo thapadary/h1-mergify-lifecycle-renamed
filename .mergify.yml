@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: h1 lifecycle inert marker
+    conditions:
+      - -draft
+    actions:
+      comment:
+        message: H1 lifecycle inert
